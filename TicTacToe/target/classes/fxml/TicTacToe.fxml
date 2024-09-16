@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.calcfx.TicTaControl">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="646.0" style="-fx-background-color: #0e132b;">
+         <children>
+            <HBox prefHeight="400.0" prefWidth="646.0">
+               <children>
+                  <Pane prefHeight="400.0" prefWidth="301.0">
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="70.0" layoutX="32.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@JugadorEquis.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="210.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@JugadorCirculo.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblNombreJ1" layoutX="46.0" layoutY="107.0" text="NAME" textFill="#b4e8ff">
+                           <font>
+                              <Font name="Marlett" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="lblNombreJ2" layoutX="222.0" layoutY="104.0" text="NAME" textFill="#ffc8ff">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                        <Label fx:id="lblPuntajeJ1" layoutX="110.0" layoutY="48.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="Marlett" size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPuntajeJ2" layoutX="178.0" layoutY="48.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="Marlett" size="33.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="145.0" layoutY="48.0" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="Marlett" size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <Label layoutX="625.0" layoutY="2.0" onMouseClicked="#mouseClick" prefHeight="25.0" prefWidth="15.0" text="X" textFill="#f99ff5">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font></Label>
+         </children></Pane>
+   </children>
+</AnchorPane>
