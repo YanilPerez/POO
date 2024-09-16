@@ -33,7 +33,6 @@ public class TicTacToexApplication extends Application {
 		controller.setStage(primaryStage);
 		primaryStage.show();
 
-
 	}
 
 //		FXMLLoader loaedr = new FXMLLoader(getClass().getResource())

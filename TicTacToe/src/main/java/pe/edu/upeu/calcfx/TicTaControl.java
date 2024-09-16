@@ -30,7 +30,6 @@ public class TicTaControl {
 
     private Jugador jugador1;
     private  Jugador jugador2;
-    private Tablero tablero;
 
 
     @FXML
@@ -65,11 +64,9 @@ public class TicTaControl {
     }
 
 
-
 private Stage stage;
     public void setStage(Stage primaryStage) {
         stage = primaryStage;
-
 
     }
     public void showTicTacToe(ActionEvent actionEvent) throws IOException {
@@ -81,6 +78,9 @@ private Stage stage;
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
+        Stage currentStage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+        currentStage.close();
+
 
         jugador1 = new Jugador(TipoImagen.EQUIS);  // Asignar nombres
         if (txtJugador1.getText().isEmpty()) {
