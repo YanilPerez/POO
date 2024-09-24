@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.calcfx.Ticpru">
+<AnchorPane prefHeight="400.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.calcfx.control.ControllerTTT">
    <children>
       <Pane prefHeight="400.0" prefWidth="667.0" style="-fx-background-color: #0e132b;">
          <children>
@@ -68,13 +68,34 @@
                                  <font>
                                     <Font size="30.0" />
                                  </font></Button>
-                              <Button fx:id="btn02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="2" />
-                              <Button fx:id="btn10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.rowIndex="1" />
-                              <Button fx:id="btn11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <Button fx:id="btn12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                              <Button fx:id="btn20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.rowIndex="2" />
-                              <Button fx:id="btn21" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <Button fx:id="btn22" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Button fx:id="btn02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
+                              <Button fx:id="btn10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
+                              <Button fx:id="btn11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
+                              <Button fx:id="btn12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
+                              <Button fx:id="btn20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
+                              <Button fx:id="btn21" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
+                              <Button fx:id="btn22" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Button>
                            </children>
                            <effect>
                               <Lighting diffuseConstant="2.0" specularConstant="1.7" specularExponent="27.81" surfaceScale="1.39">
@@ -91,6 +112,17 @@
                               </Lighting>
                            </effect>
                         </GridPane>
+                        <Label layoutX="34.0" layoutY="346.0" text="Turno:" textFill="#fffefe">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="34.0" fitWidth="101.0" layoutX="90.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="nombreturno" layoutX="87.0" layoutY="344.0" prefHeight="17.0" prefWidth="95.0" textFill="#f5f5f5">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
                      </children>
                   </Pane>
                   <Pane prefHeight="400.0" prefWidth="411.0">
@@ -113,7 +145,7 @@
                               <Font size="13.0" />
                            </font>
                         </Label>
-                        <Label layoutX="385.0" layoutY="4.0"  prefHeight="25.0" prefWidth="15.0" text="X" textFill="#f99ff5">
+                        <Label layoutX="385.0" layoutY="4.0" prefHeight="25.0" prefWidth="15.0" text="X" textFill="#f99ff5">
                            <font>
                               <Font name="Arial" size="21.0" />
                            </font>

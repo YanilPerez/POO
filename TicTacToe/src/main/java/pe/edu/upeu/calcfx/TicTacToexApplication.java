@@ -1,14 +1,13 @@
 package pe.edu.upeu.calcfx;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import pe.edu.upeu.calcfx.control.ControllerTTT;
 
 @SpringBootApplication
 public class TicTacToexApplication extends Application {
@@ -29,7 +28,7 @@ public class TicTacToexApplication extends Application {
 		Scene scene=new Scene(root);
 		primaryStage.setTitle("Mi ventana");
 		primaryStage.setScene(scene);
-		TicTaControl controller = loader.getController();
+		ControllerTTT controller = loader.getController();
 		controller.setStage(primaryStage);
 		primaryStage.show();
 
